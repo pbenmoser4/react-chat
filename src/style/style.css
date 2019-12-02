@@ -1,0 +1,5 @@
+#root, body, html {
+  height: 100% !important;
+  overflow: hidden;
+  background-color: blue;
+}

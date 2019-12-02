@@ -5,6 +5,8 @@ import ChatInputForm from './ChatInputForm';
 
 import { createMessage, getMessages } from '../../actions';
 
+import '../../style/Chat.css';
+
 class Chat extends React.Component {
   componentDidMount = () => {
     this.props.getMessages();
@@ -26,11 +28,13 @@ class Chat extends React.Component {
 
   render() {
     return (
-      <div style={{height: "100%"}}>
-        <div className="ui list">
-          {this.renderMessages()}
+      <div className="chatPage">
+        <div className="ui list chatListContainer">
+          <div className="chatList">
+            {this.renderMessages()}
+          </div>
         </div>
-        <div className="ui bottom fixed">
+        <div className="ui bottom fixed chatInput">
           <ChatInputForm onSubmit={this.onSubmit} />
         </div>
       </div>

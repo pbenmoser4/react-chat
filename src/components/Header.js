@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = props => {
   return (
-    <div className="ui primary  pointing menu" style={{borderRadius: "0px"}}>
+    <header className="ui primary pointing menu" style={{borderRadius: "0px"}}>
       <Link to="/chat" className="item">
         Chat
       </Link>
@@ -14,7 +14,7 @@ const Header = props => {
           </Link>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

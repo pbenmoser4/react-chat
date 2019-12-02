@@ -7,16 +7,16 @@ import Login from './auth/Login';
 
 import history from '../history';
 
+import '../style/App.css';
+
 const App = (props) => {
   return (
-    <div>
+    <div className="app">
       <Router history={history}>
-        <div>
-          <Header />
-          <div className="ui container">
-            <Route path="/chat" exact component={Chat} />
-            <Route path="/login" exact component={Login} />
-          </div>
+        <Header />
+        <div className="ui container appContent">
+          <Route path="/chat" exact component={Chat} />
+          <Route path="/login" exact component={Login} />
         </div>
       </Router>
     </div>

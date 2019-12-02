@@ -1,0 +1,18 @@
+.chatPage {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+
+.chatListContainer {
+  flex: 1 0 auto;
+  overflow: auto;
+}
+
+.chatList {
+  height:0em;
+}
+
+.chatInput {
+  padding-bottom: 10px;
+}
